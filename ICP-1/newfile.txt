@@ -1,0 +1,1 @@
+Newly created file to load into hdfs and attempt to append to word_list.txt and shakespeare.txt.
