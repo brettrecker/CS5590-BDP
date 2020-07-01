@@ -1,0 +1,52 @@
+Season one episodes directed by Tom with Jerry listed as a writer
+
+{
+  "responseHeader":{
+    "status":0,
+    "QTime":0,
+    "params":{
+      "indent":"true",
+      "q":"Season:1.0 AND Director: Tom* and Writers:Jerry*",
+      "wt":"json"}},
+  "response":{"numFound":4,"start":0,"docs":[
+      {
+        "id":"1",
+        "Season":"1.0",
+        "EpisodeNo":"1.0",
+        "Title":"The Stakeout",
+        "AirDate":"May 31, 1990",
+        "Writers":"Larry David, Jerry Seinfeld",
+        "Director":"Tom Cherones",
+        "SEID":"S01E01",
+        "_version_":1670963678445305856},
+      {
+        "id":"3",
+        "Season":"1.0",
+        "EpisodeNo":"3.0",
+        "Title":"Male Unbonding",
+        "AirDate":"June 14, 1990",
+        "Writers":"Larry David, Jerry Seinfeld",
+        "Director":"Tom Cherones",
+        "SEID":"S01E03",
+        "_version_":1670963678448451584},
+      {
+        "id":"4",
+        "Season":"1.0",
+        "EpisodeNo":"4.0",
+        "Title":"The Stock Tip",
+        "AirDate":"June 21, 1990",
+        "Writers":"Larry David, Jerry Seinfeld",
+        "Director":"Tom Cherones",
+        "SEID":"S01E04",
+        "_version_":1670963678450548736},
+      {
+        "id":"2",
+        "Season":"1.0",
+        "EpisodeNo":"2.0",
+        "Title":"The Robbery",
+        "AirDate":"June 7, 1990",
+        "Writers":"Matt Goldman",
+        "Director":"Tom Cherones",
+        "SEID":"S01E02",
+        "_version_":1670963678447403008}]
+  }}

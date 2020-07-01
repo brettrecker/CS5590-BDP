@@ -1,0 +1,32 @@
+Air date of December 1991
+
+{
+  "responseHeader":{
+    "status":0,
+    "QTime":0,
+    "params":{
+      "indent":"true",
+      "q":"AirDate:\"December 1991\"~2",
+      "wt":"json"}},
+  "response":{"numFound":2,"start":0,"docs":[
+      {
+        "id":"27",
+        "Season":"3.0",
+        "EpisodeNo":"11.0",
+        "Title":"The Alternate Side",
+        "AirDate":"December 4, 1991",
+        "Writers":"Larry David and Bill Masters",
+        "Director":"Tom Cherones",
+        "SEID":"S03E11",
+        "_version_":1670963678477811712},
+      {
+        "id":"28",
+        "Season":"3.0",
+        "EpisodeNo":"12.0",
+        "Title":"The Red Dot",
+        "AirDate":"December 11, 1991",
+        "Writers":"Larry David",
+        "Director":"Tom Cherones",
+        "SEID":"S03E12",
+        "_version_":1670963678477811713}]
+  }}

@@ -1,0 +1,53 @@
+Fuzzy Logic Search not containing season 1
+
+{
+  "responseHeader":{
+    "status":0,
+    "QTime":0,
+    "params":{
+      "indent":"true",
+      "q":"Title:Good~.75",
+      "wt":"json",
+      "fq":"-Season:1.0"}},
+  "response":{"numFound":4,"start":0,"docs":[
+      {
+        "id":"36",
+        "Season":"3.0",
+        "EpisodeNo":"20.0",
+        "Title":"The Good Samaritan",
+        "AirDate":"March 4, 1992",
+        "Writers":"Peter Mehlman",
+        "Director":"Jason Alexander",
+        "SEID":"S03E20",
+        "_version_":1670963678480957441},
+      {
+        "id":"156",
+        "Season":"9.0",
+        "EpisodeNo":"4.0",
+        "Title":"The Blood",
+        "AirDate":"October 16, 1997",
+        "Writers":"Dan O'Keefe",
+        "Director":"Andy Ackerman",
+        "SEID":"S09E04",
+        "_version_":1670963678535483394},
+      {
+        "id":"114",
+        "Season":"7.0",
+        "EpisodeNo":"8.0",
+        "Title":"The Pool Guy",
+        "AirDate":"November 16, 1995",
+        "Writers":"David Mandel",
+        "Director":"Andy Ackerman",
+        "SEID":"S07E08",
+        "_version_":1670963678515560449},
+      {
+        "id":"57",
+        "Season":"4.0",
+        "EpisodeNo":"18.0",
+        "Title":"The Old Man",
+        "AirDate":"February 18, 1993",
+        "Writers":"Bruce Kirschbaum",
+        "Director":"Tom Cherones",
+        "SEID":"S04E18",
+        "_version_":1670963678490394624}]
+  }}

@@ -1,0 +1,22 @@
+AirDate 1995 and Writer is Bruce.
+
+{
+  "responseHeader":{
+    "status":0,
+    "QTime":1,
+    "params":{
+      "indent":"true",
+      "q":"AirDate: 1995 AND Writers:Bruce",
+      "wt":"json"}},
+  "response":{"numFound":1,"start":0,"docs":[
+      {
+        "id":"95",
+        "Season":"6.0",
+        "EpisodeNo":"11.0",
+        "Title":"The Switch",
+        "AirDate":"January 5, 1995",
+        "Writers":"Bruce Kirschbaum and Sam Kass",
+        "Director":"Andy Ackerman",
+        "SEID":"S06E11",
+        "_version_":1670963678507171841}]
+  }}

@@ -1,0 +1,42 @@
+Fuzzy Logic on 75% of Jerry or Seinfeld
+
+{
+  "responseHeader":{
+    "status":0,
+    "QTime":0,
+    "params":{
+      "indent":"true",
+      "q":"Title:Jerry~.75 OR Title:Seinfeld~.75",
+      "wt":"json"}},
+  "response":{"numFound":3,"start":0,"docs":[
+      {
+        "id":"103",
+        "Season":"6.0",
+        "EpisodeNo":"21.0",
+        "Title":"The Fusilli Jerry",
+        "AirDate":"April 27, 1995",
+        "Writers":"Marjorie Gross",
+        "Director":"Andy Ackerman",
+        "SEID":"S06E21",
+        "_version_":1670963678511366144},
+      {
+        "id":"133",
+        "Season":"8.0",
+        "EpisodeNo":"3.0",
+        "Title":"The Bizarro Jerry",
+        "AirDate":"October 3, 1996",
+        "Writers":"David Mandel",
+        "Director":"Andy Ackerman",
+        "SEID":"S08E03",
+        "_version_":1670963678527094784},
+      {
+        "id":"141",
+        "Season":"8.0",
+        "EpisodeNo":"11.0",
+        "Title":"The Little Jerry",
+        "AirDate":"January 9, 1997",
+        "Writers":"Jennifer Crittenden",
+        "Director":"Andy Ackerman",
+        "SEID":"S08E11",
+        "_version_":1670963678530240512}]
+  }}

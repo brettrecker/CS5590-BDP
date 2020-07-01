@@ -1,0 +1,34 @@
+Title does not include the and in ascending order of title
+
+{
+  "responseHeader":{
+    "status":0,
+    "QTime":0,
+    "params":{
+      "sort":"Title asc",
+      "indent":"true",
+      "q":"-Title:The*",
+      "wt":"json",
+      "rows":"173"}},
+  "response":{"numFound":2,"start":0,"docs":[
+      {
+        "id":"3",
+        "Season":"1.0",
+        "EpisodeNo":"3.0",
+        "Title":"Male Unbonding",
+        "AirDate":"June 14, 1990",
+        "Writers":"Larry David, Jerry Seinfeld",
+        "Director":"Tom Cherones",
+        "SEID":"S01E03",
+        "_version_":1670963678448451584},
+      {
+        "id":"0",
+        "Season":"1.0",
+        "EpisodeNo":"1.0",
+        "Title":"Good News, Bad News",
+        "AirDate":"July 5, 1989",
+        "Writers":"Larry David, Jerry Seinfeld",
+        "Director":"Art Wolff",
+        "SEID":"S01E01",
+        "_version_":1670963678400217088}]
+  }}
