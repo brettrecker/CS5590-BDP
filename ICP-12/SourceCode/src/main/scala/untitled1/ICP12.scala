@@ -139,6 +139,9 @@ object ICP12 {
 
     println("12. ==== Apply Stateful Queries. =====")
 
+    g.edges.filter("BikeNumber > 700").show()
+    g.edges.filter("ZipCode = 95051").show()
+
     // 13. Subgraphs with a condition.
 
     println("13. ==== Subgraphs with a condition. =====")
@@ -148,5 +151,37 @@ object ICP12 {
     val g2 = GraphFrame(v2, e2)
     g2.vertices.select("*").orderBy("id").show(10)
 
+
+    // BONUS PART
+
+    // 1. Vertex degree
+
+    println("B1. ==== Vertex degree =====")
+
+    g.degrees.show(10)
+
+    // 2. What are the most common destinations in the dataset from location to location?
+
+    println("B2. ==== What are the most common destinations in the dataset from location to location? =====")
+
+    g.edges.groupBy("src", "dst").count().orderBy(desc("count")).show(10)
+
+    // 3. What is the station with the highest ratio of in degrees but fewest out degrees. As in, what station acts as almost a pure trip sink. A station where trips end at but rarely start from.
+
+    println("B3. ==== What is the station with the highest ratio of in degrees but fewest out degrees. As in, what station acts as almost a pure trip sink. A station where trips end at but rarely start from. =====")
+
+    val inDF = in_degree.orderBy(desc("inDegree"))
+    val outDF = out_degree.orderBy("outDegree")
+    val df = inDF.join(outDF, Seq("id")).selectExpr("id", "double(inDegree)/double(outDegree) as degreeRatio")
+    df.orderBy(desc("degreeRatio")).limit(10).show()
+
+    // 4. Save graphs generated to a file.
+
+    println("B4. ==== Save graphs generated to a file. =====")
+
+    g.vertices.write.mode("overwrite").parquet("vertices")
+    g.edges.write.mode("overwrite").parquet("edges")
+
+    spark.stop()
   }
 }
